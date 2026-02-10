@@ -1,23 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Meu primeiro site</title>
+  <title>Matio Geek</title>
   <style>
     body {
-      background: #111;
-      color: white;
+      margin: 0;
+      background: #0f0f0f;
+      color: #fff;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
     }
-    h1 {
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #00ff88;
+    }
+    header h1 {
+      margin: 0;
       color: #00ff88;
+    }
+    .container {
+      padding: 20px;
+    }
+    h2 {
+      border-left: 5px solid #00ff88;
+      padding-left: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      display: block;
+    }
+    .card p {
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 Site do Matio Santos no ar!</h1>
-  <p>Meu site foi publicado com sucesso no GitHub Pages.</p>
+
+<header>
+  <h1>🎮 Matio Geek</h1>
+  <p>Filmes, séries e teorias do mundo geek</p>
+</header>
+
+<div class="container">
+
+  <h2>🎬 Filmes</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w300/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
+      <p>Vingadores: Ultimato</p>
+    </div>
+
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w300/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg">
+      <p>Batman</p>
+    </div>
+  </div>
+
+  <h2>📺 Séries</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w300/9EBKgrFIsCFSV1RZKWhYUdbtGiv.jpg">
+      <p>Stranger Things</p>
+    </div>
+
+    <div class="card">
+      <img src="https://image.tmdb.org/t/p/w300/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg">
+      <p>The Mandalorian</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 • Matio Geek
+</footer>
+
 </body>
 </html>
