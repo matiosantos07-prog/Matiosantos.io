@@ -1,102 +1,51 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Geek News</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0e0e0e;
-      color: #f1f1f1;
-    }
-    header {
-      background: #111;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 3px solid #e50914;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      color: #e50914;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      background: #1a1a1a;
-      padding: 10px;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-    }
-    nav a:hover {
-      color: #e50914;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 0 15px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #1c1c1c;
-      border-radius: 8px;
-      overflow: hidden;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: scale(1.03);
-    }
-    .card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-    .card h2 {
-      font-size: 20px;
-      padding: 15px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #aaa;
-    }
+    body { margin:0; font-family: Arial, sans-serif; background:#0e0e0e; color:#f1f1f1; }
+    header { background:#111; padding:20px; text-align:center; border-bottom:3px solid #e50914; }
+    header h1 { margin:0; font-size:36px; color:#e50914; }
+    nav { display:flex; justify-content:center; gap:20px; background:#1a1a1a; padding:10px; }
+    nav a { color:#fff; text-decoration:none; font-size:18px; }
+    nav a:hover { color:#e50914; }
+    .container { max-width:1100px; margin:30px auto; padding:0 15px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
+    .card { background:#1c1c1c; border-radius:8px; overflow:hidden; cursor:pointer; transition: transform 0.2s; }
+    .card:hover { transform: scale(1.03); }
+    .card img { width:100%; height:160px; object-fit:cover; }
+    .card h2 { font-size:20px; padding:15px; }
+    footer { text-align:center; padding:20px; background:#111; margin-top:40px; font-size:14px; color:#aaa; }
   </style>
 </head>
-<body><header>
+<body>
+
+<header>
   <h1>GEEK NEWS</h1>
-</header><nav>
+</header>
+
+<nav>
   <a href="#">Início</a>
   <a href="#">Filmes</a>
   <a href="#">Séries</a>
   <a href="#">Animes</a>
   <a href="#">Teorias</a>
-</nav><div class="container">
+</nav>
+
+<div class="container">
   <div class="grid">
     <div class="card" onclick="location.href='artigo.html'">
-      <img src="<img src="<img src=" <img src="https://raw.githubusercontent.com/seu-usuario/seu-repo/main/img/bb048e21c59f0f6904eb277ab894a5ae.jpg" alt="Imagem">
+      <img src="img/bb048e21c59f0f6904eb277ab894a5ae.jpg" alt="Notícia Geek">
       <h2>Mulher-Maravilha pode voltar no novo DCU?</h2>
-    </div><div class="card" onclick="location.href='artigo.html'">
-  <img src="https://i.imgur.com/9ZQZ4ZJ.jpg" alt="Vingadores" />
-  <h2>Vingadores Secret Wars vai resetar a Marvel?</h2>
+    </div>
+  </div>
 </div>
 
-  </div>
-</div><footer>
+<footer>
   © 2026 - Geek News | Teorias, Filmes e Séries
-</footer></body>
-</html>
-<div class="card" onclick="location.href='artigo.html'">
+</footer>
 
+</body>
+</html>
