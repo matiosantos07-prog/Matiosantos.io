@@ -1,107 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mulher-Maravilha DCU</title>
+<title>Geek News</title>
 <style>
 body {margin:0; font-family: Arial, sans-serif; background:#0e0e0e; color:#f1f1f1;}
 header {background:#111; padding:20px; text-align:center; border-bottom:3px solid #e50914;}
-header h1 {margin:0; font-size:32px; color:#e50914;}
-.container {max-width:800px; margin:30px auto; padding:0 15px;}
-.container img {width:100%; border-radius:8px; margin-bottom:20px;}
-.container p {font-size:18px; line-height:1.6; margin-bottom:20px;}
-iframe {width:100%; height:450px; border:none; border-radius:8px; margin-bottom:30px;}
-a {color:#e50914; text-decoration:none;}
-a:hover {text-decoration:underline;}
+header h1 {margin:0; font-size:36px; color:#e50914;}
+nav {display:flex; justify-content:center; gap:20px; background:#1a1a1a; padding:10px;}
+nav a {color:#fff; text-decoration:none; font-size:18px;}
+nav a:hover {color:#e50914;}
+.container {max-width:1100px; margin:30px auto; padding:0 15px;}
+.grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px;}
+.card {background:#1c1c1c; border-radius:8px; overflow:hidden; cursor:pointer; transition: transform 0.2s;}
+.card:hover {transform: scale(1.03);}
+.card img {width:100%; height:160px; object-fit:cover;}
+.card h2 {font-size:20px; padding:15px;}
+footer {text-align:center; padding:20px; background:#111; margin-top:40px; font-size:14px; color:#aaa;}
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Mulher-Maravilha no DCU</h1>
+  <h1>Geek News</h1>
 </header>
 
-<div class="container">
-  <img src="img/bb048e21c59f0f6904eb277ab894a5ae.jpg" alt="Mulher-Maravilha">
-
-  <p>Recentemente surgiram rumores de que a Mulher-Maravilha pode retornar no novo DCU. Os fãs estão animados com teorias de que Diana Prince terá um papel central na nova fase da DC.</p>
-
-  <p>Além disso, o novo filme promete conexões com outros personagens icônicos e trazer teorias que os fãs vêm discutindo há anos.</p>
-
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-</div>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Naruto & Boruto</title>
-<style>
-body {margin:0; font-family: Arial, sans-serif; background:#0e0e0e; color:#f1f1f1;}
-header {background:#111; padding:20px; text-align:center; border-bottom:3px solid #e50914;}
-header h1 {margin:0; font-size:32px; color:#e50914;}
-.container {max-width:800px; margin:30px auto; padding:0 15px;}
-.container img {width:100%; border-radius:8px; margin-bottom:20px;}
-.container p {font-size:18px; line-height:1.6; margin-bottom:20px;}
-iframe {width:100%; height:450px; border:none; border-radius:8px; margin-bottom:30px;}
-a {color:#e50914; text-decoration:none;}
-a:hover {text-decoration:underline;}
-</style>
-</head>
-<body>
-
-<header>
-  <h1>Naruto e Boruto: Teorias</h1>
-</header>
+<nav>
+  <a href="#">Início</a>
+  <a href="#">Séries</a>
+  <a href="#">Filmes</a>
+  <a href="#">Animes</a>
+  <a href="#">Teorias</a>
+</nav>
 
 <div class="container">
-  <img src="img/717obGBj1wL._AC_UF894,1000_QL80_.jpg>
+  <div class="grid">
+    <!-- Card 1: Mulher-Maravilha -->
+    <div class="card" onclick="location.href='artigo1.html'">
+      <img src="img/bb048e21c59f0f6904eb277ab894a5ae.jpg" alt="Mulher-Maravilha">
+      <h2>Mulher-Maravilha pode voltar no novo DCU?</h2>
+    </div>
 
-  <p>O universo Naruto continua rendendo teorias incríveis, principalmente sobre Boruto e a nova geração. Fãs analisam as conexões entre personagens antigos e novos, criando uma linha do tempo detalhada das aventuras ninja.</p>
+    <!-- Card 2: Vingadores -->
+    <div class="card" onclick="location.href='artigo2.html'">
+      <img src="img/vingadores.jpg" alt="Vingadores">
+      <h2>Vingadores Secret Wars vai resetar a Marvel?</h2>
+    </div>
 
-  <p>Também há especulações sobre o próximo grande inimigo que vai desafiar Konoha e toda a aliança ninja.</p>
+    <!-- Card 3: Stranger Things -->
+    <div class="card" onclick="location.href='artigo3.html'">
+      <img src="img/strangerthings.jpg" alt="Stranger Things">
+      <h2>Teorias de Stranger Things</h2>
+    </div>
 
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_ANIME" allowfullscreen></iframe>
+    <!-- Card 4: Naruto/Boruto -->
+    <div class="card" onclick="location.href='artigo4.html'">
+      <img src="img/717obGBj1wL._AC_UF894,1000_QL80_.jpg" alt="Naruto e Boruto">
+      <h2>Naruto e Boruto: Teorias conectadas</h2>
+    </div>
+
+    <!-- Card 5: Artigo curto -->
+    <div class="card" onclick="location.href='artigo_curto.html'">
+      <img src="img/curiosidade.jpg" alt="Curiosidade Geek">
+      <h2>Curiosidade Geek</h2>
+    </div>
+  </div>
 </div>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Curiosidade Geek</title>
-<style>
-body {margin:0; font-family: Arial, sans-serif; background:#0e0e0e; color:#f1f1f1;}
-header {background:#111; padding:20px; text-align:center; border-bottom:3px solid #e50914;}
-header h1 {margin:0; font-size:28px; color:#e50914;}
-.container {max-width:800px; margin:30px auto; padding:0 15px;}
-.container img {width:100%; border-radius:8px; margin-bottom:15px;}
-.container p {font-size:18px; line-height:1.6; margin-bottom:15px;}
-iframe {width:100%; height:300px; border:none; border-radius:8px; margin-bottom:20px;}
-a {color:#e50914; text-decoration:none;}
-a:hover {text-decoration:underline;}
-</style>
-</head>
-<body>
-
-<header>
-  <h1>Curiosidade Geek</h1>
-</header>
-
-<div class="container">
-  <img src="img/curiosidade.jpg" alt="Curiosidade Geek">
-  
-  <p>Você sabia que em muitos filmes de super-heróis, detalhes escondidos nos cenários fazem referência a futuros acontecimentos?  
-  Fãs atentos sempre descobrem essas pistas antes mesmo de sair o próximo filme!</p>
-
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID_CURTO" allowfullscreen></iframe>
-</div>
+<footer>
+  © 2026 - Geek News | Teorias, Filmes e Séries
+</footer>
 
 </body>
 </html>
